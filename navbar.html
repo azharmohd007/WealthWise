@@ -1,0 +1,22 @@
+<!-- Hamburger Menu HTML -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-header">
+            <span class="nav-toggle" onclick="toggleMenu()">&#9776;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+

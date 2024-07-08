@@ -1,0 +1,273 @@
+/* Reset some default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text color */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-toggle {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar .nav-links li a {
+        padding: 14px 20px;
+        width: 100%;
+    }
+}
+
+/* Header styles */
+#header {
+    background-color: #fdd835; /* Yellow background */
+    color: #ffffff; /* White text color */
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-height: 60px; /* Adjust logo height */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Add zoom-in effect for the header image */
+#header img {
+    transition: transform 0.5s ease; /* Smooth zoom-in transition */
+}
+
+#header img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.header-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-text h1 span {
+    color: #333333; /* Dark gray for the 'W' in Wealth Wise */
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333; /* Dark gray button background */
+    color: #ffffff; /* White button text color */
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #555555; /* Darker gray on hover */
+}
+
+/* Styles for About Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Arrange columns horizontally */
+}
+
+.about-col-1 {
+    flex: 1; /* Take up 1/2 of the container width */
+    padding: 0 20px; /* Adjust spacing */
+    text-align: center; /* Center-align content */
+}
+
+.about-col-1 img {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto;
+}
+
+.about-col-2 {
+    flex: 1; /* Take up 1/2 of the container width */
+    padding: 0 20px; /* Adjust spacing */
+    text-align: center; /* Center-align content */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Services section */
+.section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 0;
+}
+
+/* Contact section */
+#contact {
+    background-color: #fdd835; /* Yellow background */
+    padding: 50px 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #333333; /* Dark gray button background */
+    color: #ffffff; /* White button text color */
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555555; /* Darker gray on hover */
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #333333; /* Dark gray icon color */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #555555; /* Darker gray on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
